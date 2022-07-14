@@ -1,0 +1,15 @@
+Gerar imagem a partir do Dockerfile
+docker build -t evolucao-spring-boot
+
+Gerar imagem a partir do Buildpack
+spring-boot:build-image
+
+
+Consumir dados de metricas de starup
+curl -X POST http://localhost:8080/actuator/startup
+
+
+
+
+Ref
+https://spring.io/blog/2020/08/14/config-file-processing-in-spring-boot-2-4
